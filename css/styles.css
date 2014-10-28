@@ -1,21 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+
 .logo{
 	width: 300px;
 }
 
 .buttonscroll{
 	position: absolute;
-	width: 160px;
+	width: 120px;
 	height: 40px;
-	left: calc(50% - 80px);
+	left: calc(50% - 60px);
 	top: 78%;
 	text-decoration: none;
 	color: white;
-	/* border: 1px solid white; */
-	border-radius: 20px;
+
 	line-height: 40px;
-	font-weight: 100;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
 	font-size: 1.4rem;
-	background-color: rgba(255,255,255,0.2);
+
+	border-bottom: 1px solid white;
+	
 }
 
 .sticky {  
@@ -42,7 +46,7 @@ h1{
 	margin-top: 4rem;
 	margin-bottom: 2rem;
 
-	font-family: "jaf-bernino-sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	font-family: "Source Sans Pro",sans-serif;
 	letter-spacing: -0.02em;
 	font-weight: 700;
 	font-style: normal;
@@ -61,9 +65,9 @@ p{
 	max-width: 800px;
 	margin:0;
 
-	font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+	font-family: "Source Sans Pro",sans-serif;
 	letter-spacing: 0.01rem;
-	font-weight: 400;
+	font-weight: 200;
 	font-style: normal;
 	font-size: 22px;
 	line-height: 1.5;
@@ -147,40 +151,11 @@ q{
 
 
 
-/*NAV
-
-nav{
-	display: block;
-	height: 60px;
-	background-color: #382808;
-}
-
-nav > ul{
-	position: relative;
-	top: -20px;
-	display: block;
-	margin:0;
+/*NAV RESPONSIVE */
+@media screen and (max-width: 600px) {
 	
-}
-
-nav > ul > li {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	width: 50px;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	color: #fff5e1;
+	.navigation{
+		display: none;
+	}
 
 }
-
-nav > ul > li > span{
-	content: url(../img/logomin.svg);
-	height: 40px;
-	width: 40px;
-	position: relative;
-	top: 10px;
-	left: 60px;
-
-
-} */
