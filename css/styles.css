@@ -31,6 +31,9 @@
     border-top: 0;  
 } 
 
+.presentation{
+	background-color: rgba(0,0,0,0.4);
+}
 
 body{
 	color: black;
@@ -58,8 +61,7 @@ h1{
 }
 
 p{
-	font-size: 1.4rem;
-	line-height: 2rem;
+	
 	text-align: left;
 	padding: 2rem;
 	max-width: 800px;
@@ -69,7 +71,7 @@ p{
 	letter-spacing: 0.01rem;
 	font-weight: 200;
 	font-style: normal;
-	font-size: 22px;
+	font-size: 24px;
 	line-height: 1.5;
 
 }
@@ -123,7 +125,7 @@ q{
 
 	  #left{
 		display: inline-block;
-		width: 50vw;
+		width: 48vw;
 		padding: 0;
 		height: 200px;
 	}
