@@ -1,0 +1,120 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+nav{
+	display: block;
+	height: 60px;
+	background-color: #382808;
+}
+
+nav > ul{
+	position: relative;
+	top: -20px;
+	display: block;
+	margin:0;
+	
+}
+
+nav > ul > li {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	width: 50px;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	color: #fff5e1;
+
+}
+
+nav > ul > li > span{
+	content: url(../img/logomin.svg);
+	height: 40px;
+	width: 40px;
+	position: relative;
+	top: -10px;
+	left: 0px;
+	}
+
+nav a {
+	top: -20px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 25px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1rem;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+
+/* Effect 21: borders slight translate */
+.cl-effect-21 a {
+	padding: 6px;
+	color: #fff5e1;
+	font-weight: 700;
+	text-shadow: none;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cl-effect-21 a::before,
+.cl-effect-21 a::after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-40px);
+	-moz-transform: translateY(-40px);
+	transform: translateY(-40px);
+}
+
+.cl-effect-21 a::before {
+	top: 35px;
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	transform: translateY(-4px);
+}
+
+.cl-effect-21 a::after {
+	bottom: 35px;
+	-webkit-transform: translateY(4px);
+	-moz-transform: translateY(4px);
+	transform: translateY(4px);
+}
+
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus {
+	color: #fff;
+}
+
+.cl-effect-21 a:hover::before,
+.cl-effect-21 a:focus::before,
+.cl-effect-21 a:hover::after,
+.cl-effect-21 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}

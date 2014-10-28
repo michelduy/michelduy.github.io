@@ -6,20 +6,100 @@
 	<title>Michel Duy</title>
 	<link rel="stylesheet" href="css/fullscreen_background.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link rel="stylesheet" href="css/effectonscroll.css">
+	<link rel="stylesheet" href="css/hovereffect.css">
+	<!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr.custom.js"></script>
+	
 </head>
 <body>
 	<!-- HOMEPAGE -->
-	<div class="fullscreen background" style="background-image:url('img/background.jpg');" data-img-width="1600" data-img-height="1064">
-    <div class="content-a">
-        <div class="content-b">
-            <img class="logo" src="img/logo.svg" alt="logo">
-        </div>
-    </div>
-</div>
+	<div class="fullscreen background" style="background-image:url('img/background.jpg'); background-attachment:fixed;" data-img-width="1600" data-img-height="1064">
+	    <div class="content-a">
+	        <div class="content-b">
+	            <img class="logo" src="img/logo.svg" alt="logo">
+	            <a href="#ART" class="buttonscroll">scroll down</a>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- NAV -->
+	<section >
+		<nav class="nav cl-effect-21">
+			<ul>
+				<li><span>logo</span></li>
+				<a href="#">Project</a>
+				<a href="#">Donation</a>
+				<a href="#">About</a>
+			</ul>
+		</nav>
+	</section>
+
+
+	<!-- ARTICLE -->
+	<div id="cbp-so-scroller" class="content-a cbp-so-scroller" style="margin: 0;">
+	<div id="ART" class="fullscreen background" style="background-image:url('img/picture.jpg');" data-img-width="1600" data-img-height="1064">
+	    <div>
+	        <div class="content-b cbp-so-section">
+	        	<div class="presentation cbp-so-side cbp-so-side-left" style="color:white;">
+	            <h1>Travel to Laos</h1>
+	            <p>Next summer, I'll be traveling with a backpack to Laos, Vientiane for humanitarian aid. I've always had the desire to do humanitarian aid and I'm glad I found a way to combine two of the things I like, which are traveling and giving back to others!! We are going to help by restoring the actual infrastructures that are in a bad state.
+	            <br> This includes building a clinic for the elephants, renovating the nursery, reconstructing the school and creating a water canal for the chosen community to have tap water. And we're going to do so much more!</p>
+
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+	<!-- DONNATION -->
+	<div id="ART" class="fullscreen background" style="background-color:#fff5e1;" data-img-width="1600" data-img-height="1064">
+	    <div class="content-a">
+
+	        <div id="container" class=" cbp-so-section">
+	        
+
+				<div id="left" class="cbp-so-side cbp-so-side-left">
+
+					<p>Donate</p>
+
+	            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+					">
+					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
+					<img alt="" border="0" src="https://www.paypalobjects.com/fr_CA/i/scr/pixel.gif" width="1" height="1">
+				</form>
+
+				</div>
+
+				<div id="right" class="presentation cbp-so-side cbp-so-side-right" style="color:black;">
+		            <h1>Lorem ipsum dolor sit amet</h1>
+		            
+		            <p>This project is truly about helping, caring, and giving back to those who most need it. VESA broad has many destinations where you can immerse yourself with communities in need and develop a bond with them by bettering their lives. Helping others comes with a cost and I need to collect $4000 in order to be able to do so. Small or big, I will accept all the help that is offered to me and every donation will go towards helping children and elephants!</p>
+		            <p>I'll be financing my trip with different projects and activities that I'll post here and on various social medias.  <b>So stay tuned!!</b></p>
+		            <p>Last but not least, I’d like to thank all of you for your donations, as it is greatly appreciated.</p>
+		            <p>For more information on my project, please feel free to contact me or visit the VESA broad official website at <a href="http://www.vesabroad.com">http://www.vesabroad.com</a></p>
+	       		</div>
+	             
+	    	</div>
+	    </div>
+
+	</div>
+
 
 
 
 	<script src="js/fullscreen_background.js"></script>
+	<script src="js/autoscroll.js"></script>
+	<script src="js/stickynav.js"></script>
+
+	<script src="js/classie.js"></script>
+	<script src="js/cbpScroller.js"></script>
+	<script>
+		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+	</script>
+
 </body>
 </html>
