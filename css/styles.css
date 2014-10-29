@@ -168,6 +168,20 @@ q{
 
 }
 
+
+
+/* PB BACKGROUND */
+
+@media screen and (min-width: 500px) {
+
+	#HOME,
+	#ABO{
+		background-attachment: fixed;
+	}
+
+}
+
+
 .list{
 	text-align: left;
 	left: calc(50% - 160px);
