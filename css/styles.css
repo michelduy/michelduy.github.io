@@ -198,7 +198,7 @@ q{
 
 }
 
-.about > p,
+
 .about > h1 {
 	text-align: center;
 }
@@ -206,4 +206,5 @@ q{
 .description{
 	max-width: 600px;
 	margin: 0 auto;
+	text-align: center;
 }
