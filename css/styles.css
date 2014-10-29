@@ -232,3 +232,18 @@ q{
 	margin: 0 auto;
 	text-align: center;
 }
+
+footer{
+	height: 60px;
+	background-color: #382808;
+}
+
+footer > p {
+	position: relative;
+	max-width: 100%;
+	padding: 18px;
+	margin: 0;
+	text-align: center;
+	color: #fff5e1;
+	font-size: 1rem;
+}
