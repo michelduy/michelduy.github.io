@@ -36,9 +36,7 @@
 	background-color: rgba(0,0,0,0.4);
 }
 
-.presentation2{
-	background-color: rgba(255,255,255,0.4);
-}
+
 
 body{
 	color: black;
@@ -118,6 +116,12 @@ q{
 
 	}
 
+	.presentation2{
+	color:black;
+	height: 55%;
+	background-color: rgba(255,255,255,0.4);
+}
+
 	form{
 		position: relative;
 		top: 0px;
@@ -141,6 +145,12 @@ q{
 		margin: 0;
 		padding: 0;
 
+	}
+
+	.presentation2{
+	color:black;
+	height: 100%;
+	background-color: rgba(255,255,255,0.4);
 	}
 
 
