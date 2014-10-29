@@ -192,3 +192,18 @@ q{
 	position: relative;
 
 }
+
+.about{
+	color: white;
+
+}
+
+.about > p,
+.about > h1 {
+	text-align: center;
+}
+
+.description{
+	max-width: 600px;
+	margin: 0 auto;
+}
