@@ -38,6 +38,18 @@
 	border-bottom: 1px solid white;
 }
 
+
+.buttontop{
+	height: 40px;
+
+text-decoration: none;
+color: white;
+line-height: 40px;
+font-family: "Source Sans Pro";
+font-weight: 200;
+font-size: 1.4rem;
+border-bottom: 1px solid white;
+}
 .sticky {  
     position: fixed;  
     width: 100%;  
