@@ -151,6 +151,13 @@ q{
 		width: 60px;
 		left: calc(50% - 60px);
 	}
+
+	#ABO{
+		background-image:url('../img/background_flower_mobile.jpg');
+		background-size: 107%;
+		background-attachment: scroll;
+		position: relative;
+	}
 }
 
 @media screen and (min-width: 840px) {
@@ -193,7 +200,9 @@ q{
 	}
 
 	#ABO{
-		background-attachment:fixed;
+		background-image:url('../img/background_flower2.jpg');
+		background-size:cover;
+		background-attachment: fixed;
 	}
 }
 
@@ -220,7 +229,7 @@ q{
 @media screen and (min-width: 500px) {
 
 	#HOME,
-	#ABO{
+	{
 		background-attachment: fixed;
 	}
 
