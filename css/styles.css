@@ -25,7 +25,7 @@
 
 .buttonlang{
 	position: absolute;
-	width: 40px;
+	
 	height: 40px;
 	right: 5%;
 	top: 5%;
@@ -131,6 +131,14 @@ q{
 
 	}
 
+	.grostitre{
+		font-weight: 200;
+		text-align: right;
+		line-height: 8rem;
+		font-size: 6rem;
+		padding-right: 2rem;
+	}
+
 	.presentation2{
 	color:black;
 	height: 55%;
@@ -168,12 +176,24 @@ q{
 	background-color: rgba(255,255,255,0.4);
 	}
 
+	.grostitre{
+		font-weight: 200;
+	text-align: right;
+	line-height: 8rem;
+	font-size: 7rem;
+	padding-right: 2rem;
+	}
+
 
 	form{
 	position: relative;
 	top: 0px;
 	width: 60px;
 	left: calc(50% - 60px);
+	}
+
+	#ABO{
+		background-attachment:fixed;
 	}
 }
 
