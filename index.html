@@ -14,7 +14,7 @@
 	<!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
-	
+
 </head>
 <body>
 	<!-- HOMEPAGE -->
@@ -59,17 +59,17 @@
 
 	<!-- BLOG -->
 	<div id="BLO" style="background-color:white;">
-	   
-	        
-	        	
+
+
+
 	           <h1>Blog</h1>
 
 		            <div class="container" style="display:block;">
-		            	
+
 		        <ul class="grid effect-6" id="grid">
 
-						
-					
+
+
 						<li id="Picture_Article">
 							<div class="grid">
 								<figure class="effect-sadie">
@@ -77,7 +77,7 @@
 									<figcaption>
 										<h2>Holy <span>Sadie</span></h2>
 										<p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
-									</figcaption>			
+									</figcaption>
 								</figure>
 							</div>
 						</li>
@@ -89,7 +89,7 @@
 							<button id="close_article">close</button>
 						</div>
 
-					
+
 
 					<li id="Picture_Article2">
 							<div class="grid">
@@ -98,7 +98,7 @@
 									<figcaption>
 										<h2>Article <span>Deux</span></h2>
 										<p>Michel never took his eyes off me.</p>
-									</figcaption>			
+									</figcaption>
 								</figure>
 							</div>
 						</li>
@@ -132,13 +132,13 @@
 					<li><a href="http://drbl.in/fWMM"><img src="images_blog/1.png"></a></li>
 					<li><a href="http://drbl.in/fWPV"><img src="images_blog/3.png"></a></li>
 					<li><a href="http://drbl.in/fWMT"><img src="images_blog/4.png"></a></li>
-					
+
 					</ul>
-		            
+
 		            </div>
-				
-	            
-	       
+
+
+
 	    </div>
 
 
@@ -146,8 +146,8 @@
 	<div id="DON" class="fullscreen background" style="background-color:#fff5e1;" data-img-width="1600" data-img-height="1064">
 	    <div class="content-a">
 
-	        
-	        
+
+
 
 				<div id="left" class="cbp-so-side cbp-so-side-left">
 
@@ -182,19 +182,19 @@
 
 				<div class=" cbp-so-section">
 
-				
+
 
 					<div class="cbp-so-side cbp-so-side-right" style="width: 100%; padding:0;">
 		            <h1>"To give is to be happy with"</h1>
-		            
+
 		            <p>This project is truly about helping, caring, and giving back to those who most need it. VESA broad has many destinations where you can immerse yourself with communities in need and develop a bond with them by bettering their lives. Helping others comes with a cost and I need to collect $4000 in order to be able to do so. Small or big, I will accept all the help that is offered to me and every donation will go towards helping children and elephants!</p>
 					</div>
 
 				</div>
-			
 
 
-					<div  class="cbp-so-section">					
+
+					<div  class="cbp-so-section">
 						<div class="cbp-so-side cbp-so-side-right" style="width: 100%; padding:0;">
 			            <p>For more information on my project, please feel free to contact me or visit the VESA broad official website at <a href="http://www.vesabroad.com">http://www.vesabroad.com</a></p>
 						</div>
@@ -210,11 +210,11 @@
 			            <div class="cbp-so-side cbp-so-side-right" style="width: 100%; padding:0;">
 			            <p>Last but not least, I’d like to thank all of you for your donations, as it is greatly appreciated.</p>
 			            </div>
-			        
-		    		</div> 
-		          
+
+		    		</div>
+
 	       	</div>
-	           	    	
+
 	    </div>
 
 	</div>
@@ -261,7 +261,11 @@
 	<script src="js/imagesloaded.js"></script>
 	<script src="js/AnimOnScroll.js"></script>
 	<script src="js/toggle.js"></script>
-	<!--<script type="text/javascript">maFonction('#Picture_Article', '#Article')</script>-->
+	<script type="text/javascript">
+          console.log("Hi!");
+          open_close('#Picture_Article', '#close_article', '#Article');
+          open_close('#Picture_Article2', '#close_article2', '#Article2');
+        </script>
 		<script>
 			new AnimOnScroll( document.getElementById( 'grid' ), {
 				minDuration : 0.4,
