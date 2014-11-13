@@ -20,6 +20,49 @@
  };
 
 function open_close_magical(classe) {
-    var pos = $(classe).children().first()
-    console.log(pos)
+    var cur = $(classe).children().first();
+
+    var view = null;
+    var button = null;
+
+    for (;;) {
+        if (!cur.length) {
+            break;
+        }
+
+        if (view) {
+            // On cherche et le bouton
+            if (!cur.is('div')) {
+                throw "Current element is not a popup Tabarouette!";
+            }
+            button = cur.children('button');
+
+            // On fait le travail
+            view.click(function(event){
+                console.log();
+                var popup2 = $(this).next();
+                popup2.toggleClass("show");
+                popup2.toggleClass("hide");
+            });
+            button.click(function(event){
+                console.log('click on #close_article');
+                var popup3 = $(this).parent();
+                popup3.toggleClass("show");
+                popup3.toggleClass("hide");
+            });
+
+            // On nétoie
+            view = null;
+            popup = null;
+            view = null;
+        } else {
+            // On cherche la vue.
+            if (!cur.is('li')) {
+                throw "Current element is not a view Tabarnak!";
+            }
+            view = cur;
+        }
+
+        cur = cur.next();
+    }
 };
