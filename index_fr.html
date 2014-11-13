@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/effectonscroll.css">
 	<link rel="stylesheet" href="css/hovereffect.css">
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="css/set1.css" />
 	<!-- <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
@@ -21,7 +23,7 @@
 	        <div class="content-b">
 	        	<a href="index.html" class="buttonlang" style="width: 25px;">FR</a>
 	            <img class="logo" src="img/logo.svg" alt="logo">
-	            <a href="#ART" class="buttonscroll">scroll down</a>
+	            <a href="#PRO" class="buttonscroll">scroll down</a>
 	        </div>
 	    </div>
 	</div>
@@ -31,7 +33,8 @@
 		<nav class="nav cl-effect-21">
 			<ul>
 				<li><span></span></li>
-				<a href="#ART">Projet</a>
+				<a href="#PRO">Projet</a>
+				<a href="#BLO">Blog</a>
 				<a href="#DON">Donation</a>
 				<a href="#ABO">A propos</a>
 			</ul>
@@ -41,7 +44,7 @@
 
 	<!-- ARTICLE -->
 	<div id="cbp-so-scroller" class="content-a cbp-so-scroller" style="margin: 0;">
-	<div id="ART" class="fullscreen background" style="background-image:url('img/picture.jpg');" data-img-width="1600" data-img-height="1064">
+	<div id="PRO" class="fullscreen background" style="background-image:url('img/picture.jpg');" data-img-width="1600" data-img-height="1064">
 	    <div>
 	        <div class="content-b cbp-so-section">
 	        	<div class="presentation cbp-so-side cbp-so-side-left" style="color:white;">
@@ -53,6 +56,193 @@
 	    </div>
 	</div>
 
+	  <!-- BLOG -->
+    <div id="BLO" style="background-color:white;">
+	<h1>Blog</h1>
+
+	<div class="container" style="display:block;">
+
+	  <ul class="grid effect-6 pouet" id="grid">
+
+
+	  	<!-- ARTICLE 1 -->
+	    <li id="Picture_Article">
+	      <div class="grid">
+		<figure class="effect-sadie">
+		  <img src="images_blog/4.jpg" alt="img01"/>
+		  <figcaption>
+		    <h2> <span>Merci !</span></h2>
+		    <p>"I don't have friends,  <br>I have family."</p>
+		  </figcaption>
+		</figure>
+	      </div>
+	    </li>
+	    <div id="Article" class="hide background_opacity">
+	      <h3>I don't have friends, I have family.</h3>
+	      <p>Ce projet doit être le plus ambitieux que j'entreprends jusqu'a maintenant, car je ne crois pas m'avoir investis autant dans quelque chose. Ca vaut la peine, tenant compte de la cause !</p>
+	      <p>Ca l'a vraiment commencé d'une pensée : aider les autres qui n'ont pas nécessairement eu les opportunités que j'ai eu en grandissant.</p>
+	      <p>Je suis vraiment content de faire ce projet avec mon amie Gabrielle. On se connait depuis quelques temps maintenant et je peux dire que ce sont nos valeurs et nos intérêts communs qui nous ont rapprochés. On avait décidé d'un coup de tête qu'on voulait faire ce voyage humanitaire parce qu'on avait un désire commun, qui était d'améliorer notre société.</p>
+	      <p>Ce projet ne serait pas possible sans l'aide de ma famille et mes amis. J'ai grandi dans une famille qui valorise chaque chose, d'un grain de riz a l'éducation et je crois que c'est en étant exposé a cette valeur en grandissant qui a pu m'aider a développer cette empathie envers es autres.</p>
+	      <p>D'ailleurs, je ne serai pas en train d'écrire sur mon propre site sans l'incroyable aide de Clément et Romain. Ce sont des amis que j'ai eu la chance de rencontrer cet été et le travail qu'ils ont fait pour créer ce site est incroyable. Merci milles fois :)</p>
+	      <p>Dernièrement, j'aimerais remercier tout ceux qui ont fait un don jusqu'a maintenant! J'ai accumulé $240 jusqu'a aujourd'hui et même si ce montant est élevé, il reste beaucoup de chemin a faire alors continuer a m'aider et partager mon site!! Je suis vraiment reconnaissant de votre aide et j'ai un quelque chose pour vous remercier a la toute fin :)</p>
+	      <p>Ce premier article est tout simplement pour remercier ceux qui m'ont aidés jusqu'a maintenant et ceux qui vont le faire éventuellement. Je crois fermement au soutien de chacun et cela se reflète dans mes actions.</p>
+	      <p>Merci encore :)</p>
+
+
+	      <button id="close_article">close</button>
+	    </div>
+
+	    <!-- ARTICLE 2 -->
+	    <li id="Picture_Article">
+	      <div class="grid">
+		<figure class="effect-sadie">
+		  <img src="images_blog/2.jpg" alt="img02"/>
+		  <figcaption>
+		    <h2>Voyage au <span>Laos</span></h2>
+		    <p>Hopefully could be real.</p>
+		  </figcaption>
+		</figure>
+	      </div>
+	    </li>
+	    <div class="hide background_opacity">
+	      <h3>Titre Article 2</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article">close</button>
+	    </div>
+
+		<!-- ARTICLE 3 -->
+			<li id="Picture_Article">
+		      <div class="grid">
+			<figure class="effect-sadie">
+			  <img src="images_blog/3.jpg" alt="img02"/>
+			  <figcaption>
+			    <h2>Le <span> Voyage</span></h2>
+			    <p>We can't wait.</p>
+			  </figcaption>
+			</figure>
+		      </div>
+		    </li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 3</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 4 -->
+	    <li><img src="images_blog/12.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 4</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 5 -->
+	    <li><img src="images_blog/13.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 5</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 6 -->
+	    <li><img src="images_blog/10.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 6</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 7 -->
+	    <li><img src="images_blog/9.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 7</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 8 -->
+	    <li><img src="images_blog/2.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 8</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 9 -->
+	    <li><img src="images_blog/14.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 9</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 10 -->
+	    <li><img src="images_blog/5.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 10</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 11 -->
+	    <li><img src="images_blog/6.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 11</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 12 -->
+	    <li><img src="images_blog/7.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 12</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 13 -->
+	    <li><img src="images_blog/8.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 13</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 14 -->
+	    <li><img src="images_blog/9.png"></li>
+            <div  class="hide background_opacity">
+	      <h3>Titre Article 14</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+		<!-- ARTICLE 15 -->
+	    <li><img src="images_blog/12.png"></li>
+            <div  id="15" class="hide background_opacity">
+	      <h3>Titre Article 15</h3>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <p>Paragraphe lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore quae aspernatur nostrum veritatis placeat modi eum repudiandae odio blanditiis illum explicabo officia error, facilis iure nam doloremque, unde quia!</p>
+	      <button id="close_article2">close</button>
+	    </div>
+
+	   
+
+	  </ul>
+	</div>
+      </div>
 
 	<!-- DONNATION -->
 	<div id="DON" class="fullscreen background" style="background-color:#fff5e1;" data-img-width="1600" data-img-height="1064">
@@ -72,8 +262,8 @@
 						<li><img src="img/icon/globe.svg" alt="">–    Aide Humanitaire</li>
 						<li><img src="img/icon/community.svg" alt="">–    Communautée du Laos</li>
 						<li><img src="img/icon/ecology.svg" alt="">–    Écosystème</li>
-						<li><img src="img/icon/secured.svg" alt="">–    Paiement Sécurisé</li>
-						<li><img src="img/icon/paypal.svg" alt="">–    Paypal</li>
+						<!--<li><img src="img/icon/secured.svg" alt="">–    Paiement Sécurisé</li>
+						<li><img src="img/icon/paypal.svg" alt="">–    Paypal</li>-->
 					</ul>
 
 	           		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -159,12 +349,29 @@
 	<script src="js/fullscreen_background.js"></script>
 	<script src="js/autoscroll.js"></script>
 	<script src="js/stickynav.js"></script>
-
 	<script src="js/classie.js"></script>
 	<script src="js/cbpScroller.js"></script>
 	<script>
 		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
 	</script>
+	<!-- script blog -->
+      <script src="js/masonry.pkgd.min.js"></script>
+      <script src="js/imagesloaded.js"></script>
+      <script src="js/AnimOnScroll.js"></script>
+      <script src="js/toggle.js"></script>
+      <script type="text/javascript">
+        console.log("Hi!");
+        <!-- open_close('#Picture_Article', '#close_article', '#Article'); -->
+        <!-- open_close('#Picture_Article2', '#close_article2', '#Article2'); -->
+        open_close_magical('.pouet');
+      </script>
+      <script>
+	new AnimOnScroll( document.getElementById( 'grid' ), {
+	minDuration : 0.4,
+	maxDuration : 0.7,
+	viewportFactor : 0.2
+	} );
+      </script>
 
 </body>
 </html>
