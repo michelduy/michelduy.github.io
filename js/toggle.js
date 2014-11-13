@@ -53,8 +53,7 @@ function open_close_magical(classe) {
 
             // On nétoie
             view = null;
-            popup = null;
-            view = null;
+            button = null;
         } else {
             // On cherche la vue.
             if (!cur.is('li')) {
