@@ -17,4 +17,9 @@
         $(idArticle).toggleClass("hide");
 
     });
- }
+ };
+
+function open_close_magical(classe) {
+    var pos = $(classe).children().first()
+    console.log(pos)
+};
