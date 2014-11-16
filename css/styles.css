@@ -343,6 +343,7 @@ footer > p {
 }
 
 .show > p {
+	width: 100%;
 	max-width: 100%;
 	font-size: 1.4rem;
 	line-height: 1.6rem;
