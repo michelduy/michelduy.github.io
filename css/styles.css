@@ -91,12 +91,10 @@ h1{
 }
 
 p{
-	
 	text-align: left;
 	padding: 1rem;
 	max-width: 800px;
 	margin:0;
-
 	font-family: "Source Sans Pro",sans-serif;
 	letter-spacing: 0.01rem;
 	font-weight: 200;
@@ -107,18 +105,27 @@ p{
 }
 
 q{
+	position: relative;
+	display: inline-block;
 	line-height: 1.4;
 	text-align: center;
-	font-size: 32px;
-	margin: 48px -160px;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	max-width: 960px;
+	margin: 5rem;
+	color: white;
 	border: none;
 	padding: 0;
 	font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 	letter-spacing: 0.01rem;
 	font-weight: 400;
 	font-style: italic;
-	-webkit-transition: margin 100ms;
-	transition: margin 100ms;
+}
+
+.quote > p {
+	text-align: center;
+	color: white;
+	max-width: 100%;
 }
 
 #container{
@@ -291,7 +298,7 @@ q{
 
 footer{
 	height: 60px;
-	background-color: #382808;
+	background-color: #3a2117;
 }
 
 footer > p {
@@ -300,7 +307,7 @@ footer > p {
 	padding: 18px;
 	margin: 0;
 	text-align: center;
-	color: #fff5e1;
+	color: white;
 	font-size: 1rem;
 }
 
@@ -312,53 +319,54 @@ footer > p {
 	text-align: center;
 }
 
-.hide{
+
+.page{
 	position: absolute;
-	left: 100%;
-	overflow: hidden;
-	height: 0px;
-	-webkit-transition: left 1s ease-in;
-	transition: left 1s ease-in;
-}
-
-.background_opacity{
-	background-color: white;
-	opacity: 0.97;
-}
-
-.show{
-	left: 0%;
 	display: block;
-	position: absolute;
 	width: 100%;
 	height: 100%;
+
 	text-align: left;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	z-index: 9999;
+	
+	background-color: white;
 	-webkit-transition: left 0.6s ease-in;
 	transition: left 0.6s ease-in;
+
 }
 
-.show > h3 {
+
+.hide{
+		left: -120%;
+}
+
+
+.show{
+	left: 0%;
+}
+
+.page > h3 {
 	padding-left: 1rem;
 	margin-bottom: 2rem;
 	text-align: center;
 }
 
-.show > p {
+.page > p {
 	width: 100%;
 	max-width: 100%;
-	font-size: 1.4rem;
-	line-height: 1.6rem;
+	font-size: 1rem;
+	line-height: 1.4rem;
 	display: inline-block;
 	padding: 0;
 	margin: 0;
 	padding-right: 1rem;
 }
 
-.show > button {
-	position: relative;
+.page > button {
+	position: absolute;
+	bottom: 0;
 	width: 200px;
 	opacity: 1;
 	padding: 0 1em;
@@ -373,4 +381,84 @@ footer > p {
 	overflow: hidden;
 	left: calc(50% - 100px);
 	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+/*STYLES D'ARTICLES PARTIE BLOG*/
+
+.text{
+	position: absolute;
+right: 0vw;
+top: 100px;
+width: 56%;
+max-height: 620px;
+padding-left: 2rem;
+padding-right: 2rem;
+}
+
+div.style_article_1 > h3{
+	margin:0;
+}
+
+.picture{
+	background-image: url('../img/photoarticle1.jpg');
+background-size: cover;
+background-position: 50% 50%;
+display: block;
+width: 62%;
+height: 620px;
+opacity: 1;
+position: absolute;
+left: -15vw;
+}
+
+
+div.style_article_1 > div > p{
+	display: inline-block;
+	max-width: 100%;
+	font-size: 1rem;
+	line-height: 1.4rem;
+	padding: 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+
+}
+
+@media screen and (max-width: 650px) {
+	
+	.picture{
+	display: inline-block;
+	width:100%;
+	height: 400px;
+	left: 0;
+	}
+
+	.text{
+	position: absolute;
+	left: 0;
+	top: 510px;
+	width: 100%;
+	}
+
+
+	.show{
+		height: 1400px;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.show{
+	height: 100%;
+	}
+
 }
