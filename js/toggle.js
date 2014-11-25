@@ -4,15 +4,31 @@
 
  function open_close(idOpenSource, idCloseSource, idArticle) {
     $(idOpenSource).click(function(event){
-        console.log('click on #1');
-        $(idArticle).toggleClass("show");
-        $(idArticle).toggleClass("hide");
+        
+       
+
+        // $('html, body').animate({
+        // scrollTop: $(this).offset().top-90
+        // }, 500);
+
+    // $('html, body').animate({scrollTop: $('#article').offset().top}, 2000);
+
+        console.log('click on #close_article');
+        // $(idArticle).toggleClass("show");
+        // $(idArticle).toggleClass("hide");
+
+        $('html, body').animate({scrollTop: $("#Article").offset().top}, 300);
 
     });
 
 
+
+
     $(idCloseSource).click(function(event){
         console.log('click on #close_article');
+
+
+
         $(idArticle).toggleClass("show");
         $(idArticle).toggleClass("hide");
 
@@ -39,10 +55,11 @@ function open_close_magical(classe) {
 
             // On fait le travail
             view.click(function(event){
-                console.log();
+                console.log('coucou');
                 var popup2 = $(this).next();
                 popup2.toggleClass("show");
                 popup2.toggleClass("hide");
+                $('html, body').animate({scrollTop: $("#BLO").offset().top}, 600);
             });
             button.click(function(event){
                 console.log('click on #close_article');
