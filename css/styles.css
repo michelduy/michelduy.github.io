@@ -120,7 +120,7 @@ q{
 	font-size: 1.6rem;
 	line-height: 2.4rem;
 	max-width: 960px;
-	margin: 5rem;
+	margin: 3rem;
 	color: white;
 	border: none;
 	padding: 0;
@@ -325,6 +325,8 @@ footer > p {
 
 #BLO > h1 {
 	text-align: center;
+	margin: 0;
+	padding: 2rem;
 }
 
 
@@ -335,8 +337,8 @@ footer > p {
 	height: 100%;
 
 	text-align: left;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	/*padding-left: 1rem;
+	padding-right: 1rem;*/
 	z-index: 9999;
 	
 	background-color: white;
@@ -370,6 +372,7 @@ footer > p {
 	padding: 0;
 	margin: 0;
 	padding-right: 1rem;
+	padding-left: 1rem;
 }
 
 .page > button {
@@ -384,11 +387,12 @@ footer > p {
 
 @media screen and (max-width: 500px) {
 	.page > button {
-		right: 25%;
-		top: -100px;
+		position: relative;
+		left: 25%;
+		top: -50px;
+		
 	}
 }
-
 
 .page > button:active{
 	border:none;
@@ -402,60 +406,72 @@ footer > p {
 
 /*STYLES D'ARTICLES PARTIE BLOG*/
 
-.text{
-	position: absolute;
-right: 0vw;
-top: 100px;
-width: 56%;
-max-height: 620px;
-padding-left: 2rem;
-padding-right: 2rem;
-}
+@media screen and (min-width: 650px) {
 
-div.style_article_1 > h3{
-	margin:0;
-}
+	.text{
+		position: absolute;
+		right: 0vw;
+		width: 56%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		/* padding-top: 1rem; */
+		overflow: auto;
+		height: 620px;
+	}
 
-.picture{
-	background-image: url('../img/photoarticle1.jpg');
-background-size: cover;
-background-position: 50% 50%;
-display: block;
-width: 62%;
-height: 620px;
-opacity: 1;
-position: absolute;
-left: -15vw;
-}
-
-.picture2{
-	background-image: url('../images_blog/bottle.jpg');
-background-size: cover;
-background-position: 50% 50%;
-display: block;
-width: 62%;
-height: 620px;
-opacity: 1;
-position: absolute;
-left: -15vw;
-}
+	div.style_article_1 > h3{
+		margin:0;
+	}
 
 
-div.style_article_1 > div > p{
-	display: inline-block;
-	max-width: 100%;
-	font-size: 1rem;
-	line-height: 1.4rem;
-	padding: 0;
-	padding-left: 1rem;
-	padding-right: 1rem;
+	.picture{
+		position: absolute;
+		background-image: url('../img/photoarticle1.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;
+		width: 62%;
+		height: 620px;
+		opacity: 1;
+		position: absolute;
+		left: -15vw;
+	}
 
+	.picture2{
+		position: absolute;
+		background-image: url('../images_blog/bottle.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		display: block;
+		width: 62%;
+		height: 620px;
+		opacity: 1;
+		position: absolute;
+		left: -15vw;
+	}
+
+
+	div.style_article_1 > div > p{
+		display: block;
+		max-width: 100%;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		padding: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-bottom: 1rem;
+
+	}
 
 }
 
 @media screen and (max-width: 650px) {
 	
 	.picture{
+		background-image: url('../img/photoarticle1.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+	position: relative;
 	display: inline-block;
 	width:100%;
 	height: 400px;
@@ -463,23 +479,39 @@ div.style_article_1 > div > p{
 	}
 	
 	.picture2{
-	display: inline-block;
-	width:100%;
-	height: 400px;
-	left: 0;
+		background-image: url('../images_blog/bottle.jpg');
+		background-size: cover;
+		background-position: 50% 50%;
+		position: relative;
+		display: inline-block;
+		width:100%;
+		height: 400px;
+		left: 0;
 	}
 
 
 	.text{
-	position: absolute;
+	position: relative;
 	left: 0;
-	top: 510px;
 	width: 100%;
+	overflow: scroll;
 	}
 
 
 	.show{
 		height: 1400px;
+	}
+
+	div.style_article_1 > div > p{
+		display: block;
+		max-width: 100%;
+		font-size: 1rem;
+		line-height: 1.4rem;
+		padding: 0;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-bottom: 1rem;
+
 	}
 
 }
